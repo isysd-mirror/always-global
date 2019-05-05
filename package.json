@@ -1,0 +1,34 @@
+{
+  "name": "@guld/global",
+  "version": "1.0.0",
+  "description": "Runtime global object in any environment.",
+  "main": "global.node.js",
+  "module": "global.js",
+  "scripts": {
+    "test": "iso-test test.js",
+    "preinstall": "gpm -n .. -t .. -u https -i .",
+    "postinstall": "node -e \"try { require('../esm/esm.js')(module); } catch (e) {require('child_process').execSync('npm i', {cwd: require('path').join('..', 'esm')})}\""
+  },
+  "author": "isysd",
+  "license": "MIT",
+  "dependencies": {
+    "esm": "../esm"
+  },
+  "devDependencies": {
+    "iso-test": "../iso-test"
+  },
+  "peerDependencies": {
+    "gpm": "https://iramiller.com/src/js/gpm/.git"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://iramiller.com/src/js/global/.git"
+  },
+  "keywords": [
+    "isomorphic",
+    "es6",
+    "esm",
+    "global"
+  ],
+  "homepage": "https://iramiller.com/src/js/global/"
+}
