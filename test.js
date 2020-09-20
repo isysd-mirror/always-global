@@ -1,4 +1,4 @@
-import { finishTest } from '../iso-test/index.js'
+import { finishTest } from '../../iso-test/index.js'
 import global from './global.js'
 
 if (typeof global !== 'object') throw new TypeError('global is not an object')
