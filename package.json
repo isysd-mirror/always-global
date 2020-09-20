@@ -1,6 +1,6 @@
 {
   "name": "@guld/global",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Runtime global object in any environment.",
   "main": "global.node.js",
   "module": "global.js",
