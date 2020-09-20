@@ -1,6 +1,6 @@
 {
   "name": "@guld/global",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Runtime global object in any environment.",
   "main": "global.node.js",
   "module": "global.js",
@@ -15,14 +15,14 @@
     "esm": "../esm"
   },
   "devDependencies": {
-    "iso-test": "../iso-test"
+    "iso-test": "https://github.com/isysd-mirror/iso-test.git"
   },
   "peerDependencies": {
-    "gpm": "https://iramiller.com/src/js/gpm/.git"
+    "gpm": "https://github.com/isysd-mirror/gpm.git"
   },
   "repository": {
     "type": "git",
-    "url": "https://iramiller.com/src/js/global/.git"
+    "url": "https://github.com/isysd-mirror/global.git"
   },
   "keywords": [
     "isomorphic",
@@ -30,5 +30,5 @@
     "esm",
     "global"
   ],
-  "homepage": "https://iramiller.com/src/js/global/"
+  "homepage": "https://github.com/isysd-mirror/global/"
 }
