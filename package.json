@@ -1,28 +1,28 @@
 {
-  "name": "@guld/global",
-  "version": "1.0.2",
+  "name": "always-global",
+  "version": "1.0.3",
   "description": "Runtime global object in any environment.",
   "main": "global.node.js",
   "module": "global.js",
   "scripts": {
     "test": "iso-test test.js",
-    "preinstall": "gpm -n ../.. -t ../.. -u https -i .",
-    "postinstall": "node -e \"try { require('../../esm/esm.js')(module); } catch (e) {require('child_process').execSync('npm i', {cwd: require('path').join('..', '..', 'esm')})}\""
+    "preinstall": "gpm -n .. -t .. -u https -d 1 -i .",
+    "postinstall": "node -e \"try { require('../esm/esm.js')(module); } catch (e) {require('child_process').execSync('npm i', {cwd: require('path').join('..', 'esm')})}\""
   },
   "author": "isysd",
   "license": "MIT",
   "dependencies": {
-    "esm": "../../esm"
+    "esm": "../esm"
   },
   "devDependencies": {
-    "iso-test": "../../iso-test"
+    "iso-test": "../iso-test"
   },
   "peerDependencies": {
     "gpm": "https://github.com/isysd-mirror/gpm.git"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/isysd-mirror/global.git"
+    "url": "https://github.com/isysd-mirror/always-global.git"
   },
   "keywords": [
     "isomorphic",
@@ -30,5 +30,5 @@
     "esm",
     "global"
   ],
-  "homepage": "https://github.com/isysd-mirror/global/"
+  "homepage": "https://github.com/isysd-mirror/always-global/"
 }
