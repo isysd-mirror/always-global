@@ -1,6 +1,6 @@
 before_install:
   - npm i -g https://github.com/IonicaBizau/gpm.git
-  - gpm -n .. -t .. -u https -i iso-test
+  - gpm -n .. -t .. -u https -d 1 -i iso-test
 install:
   - npm i
 matrix:
@@ -18,11 +18,11 @@ matrix:
     env: BROWSER=firefox MOZ_HEADLESS=1
     addons:
       firefox: "latest"
-  - os: osx
-    env: BROWSER=chromium-browser HEADLESS=1
-    addons:
-      homebrew:
-        casks: chromium
+#  - os: osx
+#    env: BROWSER=chromium-browser HEADLESS=1
+#    addons:
+#      homebrew:
+#        casks: chromium
   - os: osx
     env: BROWSER=google-chrome-stable HEADLESS=1
     addons:
@@ -41,7 +41,7 @@ matrix:
     before_install:
       - choco install googlechrome
       - npm i -g https://github.com/IonicaBizau/gpm.git
-      - gpm -n .. -t .. -u https -i iso-test
+      - gpm -n .. -t .. -u https -d 1 -i iso-test
 # 
 # Firefox and Chromium not working on Windows, for some reason :/
 #
