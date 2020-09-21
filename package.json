@@ -1,11 +1,11 @@
 {
   "name": "always-global",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Runtime global object in any environment.",
   "main": "global.node.js",
   "module": "global.js",
   "scripts": {
-    "test": "iso-test test.js",
+    "test": "iso-test ./test.js",
     "preinstall": "gpm -n .. -t .. -u https -d 1 -i .",
     "postinstall": "node -e \"try { require('../esm/esm.js')(module); } catch (e) {require('child_process').execSync('npm i', {cwd: require('path').join('..', 'esm')})}\""
   },
@@ -18,7 +18,7 @@
     "iso-test": "../iso-test"
   },
   "peerDependencies": {
-    "gpm": "https://github.com/isysd-mirror/gpm.git#isysd"
+    "gpm": "https://github.com/IonicaBizau/gpm.git"
   },
   "repository": {
     "type": "git",
